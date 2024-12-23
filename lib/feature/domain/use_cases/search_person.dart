@@ -6,9 +6,9 @@ import '/feature/domain/repositories/person_repository.dart';
 import '../../../core/error/failure.dart';
 import '../entities/person_entity.dart';
 
-class SearchPersons extends BasicUseCase<List<PersonEntity>,SearchPersonParams>  {
+class SearchPerson extends BasicUseCase<List<PersonEntity>,SearchPersonParams>  {
   final PersonRepository personRepository;
-  SearchPersons(this.personRepository);
+  SearchPerson(this.personRepository);
 
   @override
   Future<Either<Failure,List<PersonEntity>>> call (SearchPersonParams params) async {

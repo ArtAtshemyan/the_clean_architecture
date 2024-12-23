@@ -1,0 +1,18 @@
+import '/feature/domain/entities/person_entity.dart';
+
+class LocationModel extends LocationEntity{
+  LocationModel({required super.name, required super.url});
+
+  factory LocationModel.formJson(Map<String, dynamic> json) {
+    return LocationModel(
+      name: json['name'],
+      url: json['url'],
+    );
+  }
+  Map<String, dynamic> toJson() {
+    return {
+      'name': name,
+      'url': url,
+    };
+  }
+}
