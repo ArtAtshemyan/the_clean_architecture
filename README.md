@@ -1,1 +1,1 @@
-# the_clean_architecture
+# Чистая Архитектура (The Clean Architecture)
